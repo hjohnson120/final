@@ -10,3 +10,35 @@ body {
   margin: 0;
   min-height: 100%;
 }
+.top-nav {
+  color: white;
+  padding-left: 0.5rem;
+}
+.nav-list {
+  color: white;
+  list-style: none;
+  padding-top: 1.5rem;
+}
+nav a {
+  justify-content: right;
+  padding: 1rem;
+}
+
+a {
+  color: white;
+  justify-content: space-between;
+}
+.nav-bar {
+  display: flex;
+  background-color: #512da8;
+  justify-content: space-between;
+}
+.launches {
+  background-color: #ffc107;
+}
+
+.button-left {
+  background-color: #ffc107;
+  border-top-right-radius: 12px;
+  border-width: 50%;
+}
