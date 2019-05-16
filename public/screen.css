@@ -27,6 +27,8 @@ nav a {
   background-color: #ededed;
   align-content: center;
   width: 75%;
+  padding: 5%;
+  border-radius: 8px;
 }
 a {
   color: white;
@@ -40,6 +42,7 @@ a {
 .launches {
   background-color: #ffc107;
   padding: 1%;
+  color: #212121;
 }
 .center-pic {
   text-align: center;
@@ -51,6 +54,7 @@ a {
   border-bottom-left-radius: 20px;
   width: 80px;
   height: 35px;
+  margin-top: 4%;
 }
 
 .button-left {
@@ -59,6 +63,7 @@ a {
   border-bottom-right-radius: 20px;
   width: 80px;
   height: 35px;
+  margin-top: 4%;
 }
 .mission-statement {
   background-color: #d1c4e9;
