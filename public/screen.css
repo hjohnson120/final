@@ -20,6 +20,9 @@ body {
   padding-top: 1.5rem;
 }
 .pic-of-the-day {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 nav a {
   justify-content: right;
@@ -29,7 +32,8 @@ nav a {
   background-color: #ededed;
   align-content: center;
   width: 75%;
-  padding: 5%;
+  height: 20%;
+  padding: 1%;
   border-radius: 8px;
 }
 a {
@@ -46,9 +50,12 @@ a {
   padding: 1%;
   color: #212121;
 }
-.center-pic {
+.center-text {
   text-align: center;
-  /* color: white; */
+  color: white;
+  padding: 10%;
+  font-size: 2rem;
+  margin: 0%;
 }
 .button-right {
   background-color: #ffc107;
@@ -58,7 +65,9 @@ a {
   height: 35px;
   margin-top: 4%;
 }
-
+.name-of-launch {
+  text-align: center;
+}
 .button-left {
   background-color: #ffc107;
   border-top-right-radius: 20px;
@@ -91,4 +100,7 @@ a {
 }
 .ms-title {
   padding-top: 2%;
+}
+.center {
+  text-align: center;
 }
