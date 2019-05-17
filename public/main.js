@@ -9,6 +9,7 @@ const main = () => {
       // update the HTML
       document.querySelector('.pic-of-the-day').style.backgroundImage =
         'url(' + message.url + ')'
+      document.querySelector('.copyright').textContent = message.copyright
       fetch('https://sdg-astro-api.herokuapp.com/api/SpaceX/launches/upcoming')
         .then(resp => {
           console.log(resp)
