@@ -17,6 +17,7 @@ const main = () => {
         })
         .then(upcomingLaunches => {
           console.log(upcomingLaunches)
+
           let launchTime = upcomingLaunches[0].launch_date_utc
           // update the HTML
           document.querySelector('.name-of-launch').textContent =
@@ -26,6 +27,12 @@ const main = () => {
           document.querySelector('.launch-time').textContent = launchTime
           document.querySelector('.launch-place').textContent =
             upcomingLaunches[0].launch_site.site_name_long
+          // if (count < upcomingLaunches.length) {
+          //   count++
+          // } else {
+          //   count = 0
+          // }
+          // console.log(count)
         })
     })
 }
