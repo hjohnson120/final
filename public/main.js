@@ -17,17 +17,37 @@ const main = () => {
         })
         .then(upcomingLaunches => {
           console.log(upcomingLaunches)
+          let launchTime = upcomingLaunches[0].launch_date_utc
           // update the HTML
           document.querySelector('.name-of-launch').textContent =
             upcomingLaunches[0].mission_name
           document.querySelector('.launch-info').textContent =
             upcomingLaunches[0].details
-          document.querySelector('.launch-time').textContent =
-            upcomingLaunches[0].launch_date_unix
+          document.querySelector('.launch-time').textContent = launchTime
           document.querySelector('.launch-place').textContent =
             upcomingLaunches[0].launch_site.site_name_long
         })
     })
 }
 
+// var countDownDate = new Date('2019-05-01T00:00:00').getTime()
+
+// const x = setInterval(function() {
+//   let now = new Date().getTime()
+//   let distance = countDownDate - now
+//   console.log(distance)
+
+//   let days = Math.floor(distance / (1000 * 60 * 60 * 24))
+//   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+//   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+//   let seconds = Math.floor((distance % (1000 * 60)) / 1000)
+
+//   document.querySelector('.timer').textContent =
+//     days + 'd' + hours + 'h' + minutes + 'm ' + seconds + 's'
+
+//   if (distance < 0) {
+//     clearInterval(x)
+//     document.querySelector('.timer').textContent = 'EXPIRED'
+//   }
+// }, 1000)
 document.addEventListener('DOMContentLoaded', main)
