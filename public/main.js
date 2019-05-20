@@ -36,30 +36,30 @@ const main = () => {
           // }
           // console.log(count)
 
-          // var countDownDate = new Date('May 01,2019 00:00:00').getTime()
+          var countDownDate = new Date('June 01,2019 00:00:00').getTime()
 
-          // const setTimer = setInterval(function() {
-          //   let now = new Date().getTime()
-          //   let distance = countDownDate - now
-          //   console.log(distance)
+          const setTimer = setInterval(function() {
+            let now = new Date().getTime()
+            let distance = countDownDate - now
+            console.log(distance)
 
-          //   let days = Math.floor(distance / (1000 * 60 * 60 * 24))
-          //   let hours = Math.floor(
-          //     (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-          //   )
-          //   let minutes = Math.floor(
-          //     (distance % (1000 * 60 * 60)) / (1000 * 60)
-          //   )
-          //   let seconds = Math.floor((distance % (1000 * 60)) / 1000)
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24))
+            let hours = Math.floor(
+              (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            )
+            let minutes = Math.floor(
+              (distance % (1000 * 60 * 60)) / (1000 * 60)
+            )
+            let seconds = Math.floor((distance % (1000 * 60)) / 1000)
 
-          //   document.getElementById('.timer').innerHTML =
-          //     days + 'd' + hours + 'h' + minutes + 'm ' + seconds + 's'
+            document.querySelector('.timer').textContent =
+              days + 'd' + hours + 'h' + minutes + 'm ' + seconds + 's'
 
-          //   if (distance < 0) {
-          //     clearInterval(setTimer)
-          //     document.getElementById('.timer').innerHTML = 'EXPIRED'
-          //   }
-          // }, 1000)
+            if (distance < 0) {
+              clearInterval(setTimer)
+              document.querySelector('.timer').textContent = 'EXPIRED'
+            }
+          }, 1000)
         })
     })
 }
