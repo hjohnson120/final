@@ -10,6 +10,11 @@ body {
   margin: 0;
   min-height: 100%;
 }
+.nav-bar {
+  display: flex;
+  background-color: #512da8;
+  justify-content: space-between;
+}
 .top-nav {
   color: white;
   padding-left: 0.5rem;
@@ -19,14 +24,46 @@ body {
   list-style: none;
   padding-top: 1.5rem;
 }
+nav a {
+  justify-content: right;
+  padding: 1rem;
+}
 .pic-of-the-day {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-nav a {
-  justify-content: right;
-  padding: 1rem;
+.center-text {
+  text-align: center;
+  color: white;
+  padding: 10%;
+  font-size: 2rem;
+  margin: 0%;
+}
+.image-description {
+  text-align: center;
+  padding: 0%;
+  font-size: 12.8px;
+}
+.launches {
+  background-color: #ffc107;
+  padding: 1%;
+  color: #212121;
+  margin: 0%;
+  margin-bottom: 1%;
+}
+.button-and-api {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.button-left {
+  background-color: #ffc107;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 80px;
+  height: 35px;
+  margin-top: 7%;
 }
 .api-info {
   background-color: #ededed;
@@ -36,27 +73,17 @@ nav a {
   padding: 1%;
   border-radius: 8px;
 }
+.center {
+  text-align: center;
+}
+
 a {
   color: white;
   justify-content: space-between;
 }
-.nav-bar {
-  display: flex;
-  background-color: #512da8;
-  justify-content: space-between;
-}
-.launches {
-  background-color: #ffc107;
-  padding: 1%;
-  color: #212121;
-  margin: 0%;
-}
-.center-text {
+
+.name-of-launch {
   text-align: center;
-  color: white;
-  padding: 10%;
-  font-size: 2rem;
-  margin: 0%;
 }
 .button-right {
   background-color: #ffc107;
@@ -64,23 +91,20 @@ a {
   border-bottom-left-radius: 20px;
   width: 80px;
   height: 35px;
-  margin-top: 4%;
-}
-.name-of-launch {
-  text-align: center;
-}
-.button-left {
-  background-color: #ffc107;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 80px;
-  height: 35px;
-  margin-top: 4%;
+  margin-top: 7%;
 }
 .mission-statement {
   background-color: #d1c4e9;
   text-align: center;
   color: #212121;
+}
+.ms-title {
+  padding-top: 2%;
+}
+.alien-text {
+  margin: 0%;
+  padding: 2%;
+  padding-top: 0%;
 }
 .footer {
   text-align: center;
@@ -88,26 +112,4 @@ a {
   color: #ededed;
   margin: 0%;
   padding: 2%;
-}
-.alien-text {
-  margin: 0%;
-  padding: 2%;
-  padding-top: 0%;
-}
-.button-and-api {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.ms-title {
-  padding-top: 2%;
-}
-.center {
-  text-align: center;
-}
-
-.image-description {
-  text-align: center;
-  padding: 0%;
-  font-size: 12.8px;
 }
