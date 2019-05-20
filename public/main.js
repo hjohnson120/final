@@ -10,6 +10,8 @@ const main = () => {
       document.querySelector('.pic-of-the-day').style.backgroundImage =
         'url(' + message.url + ')'
       document.querySelector('.copyright').textContent = message.copyright
+      document.querySelector('.title').textContent = message.title
+
       fetch('https://sdg-astro-api.herokuapp.com/api/SpaceX/launches/upcoming')
         .then(resp => {
           console.log(resp)
@@ -33,28 +35,33 @@ const main = () => {
           //   count = 0
           // }
           // console.log(count)
+
+          // var countDownDate = new Date('May 01,2019 00:00:00').getTime()
+
+          // const setTimer = setInterval(function() {
+          //   let now = new Date().getTime()
+          //   let distance = countDownDate - now
+          //   console.log(distance)
+
+          //   let days = Math.floor(distance / (1000 * 60 * 60 * 24))
+          //   let hours = Math.floor(
+          //     (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          //   )
+          //   let minutes = Math.floor(
+          //     (distance % (1000 * 60 * 60)) / (1000 * 60)
+          //   )
+          //   let seconds = Math.floor((distance % (1000 * 60)) / 1000)
+
+          //   document.getElementById('.timer').innerHTML =
+          //     days + 'd' + hours + 'h' + minutes + 'm ' + seconds + 's'
+
+          //   if (distance < 0) {
+          //     clearInterval(setTimer)
+          //     document.getElementById('.timer').innerHTML = 'EXPIRED'
+          //   }
+          // }, 1000)
         })
     })
 }
 
-// var countDownDate = new Date('2019-05-01T00:00:00').getTime()
-
-// const x = setInterval(function() {
-//   let now = new Date().getTime()
-//   let distance = countDownDate - now
-//   console.log(distance)
-
-//   let days = Math.floor(distance / (1000 * 60 * 60 * 24))
-//   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-//   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-//   let seconds = Math.floor((distance % (1000 * 60)) / 1000)
-
-//   document.querySelector('.timer').textContent =
-//     days + 'd' + hours + 'h' + minutes + 'm ' + seconds + 's'
-
-//   if (distance < 0) {
-//     clearInterval(x)
-//     document.querySelector('.timer').textContent = 'EXPIRED'
-//   }
-// }, 1000)
 document.addEventListener('DOMContentLoaded', main)
